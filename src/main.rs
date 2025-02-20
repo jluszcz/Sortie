@@ -55,7 +55,7 @@ fn sort(input: &mut [String]) {
         } else {
             s
         }
-            .to_string()
+        .to_string()
     });
 }
 
