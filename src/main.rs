@@ -73,8 +73,8 @@ fn main() -> Result<()> {
 #[cfg(test)]
 mod test {
     use super::*;
+    use rand::rng;
     use rand::seq::SliceRandom;
-    use rand::thread_rng;
 
     #[test]
     fn sort() -> Result<()> {
@@ -86,7 +86,7 @@ mod test {
             input.push(format!("the{i}"));
         }
 
-        input.shuffle(&mut thread_rng());
+        input.shuffle(&mut rng());
 
         let mut output = input.clone();
         super::sort(&mut output);

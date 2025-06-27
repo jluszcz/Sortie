@@ -12,4 +12,4 @@ anyhow = "1.0"
 clap = "4.5"
 
 [dev-dependencies]
-rand = "0.8"
+rand = "0.9"
